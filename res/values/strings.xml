@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RandomPinPad</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+
+    <string name="reflesh">RF</string>
+    <string name="clear">CLR</string>
+    <string name="enter">ENT</string>
+    <string name="cancel">CEL</string>
+    <string name="bkspace">BSP</string>
+</resources>

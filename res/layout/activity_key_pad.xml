@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KeyPadActivity" >
+
+    <TextView
+        android:id="@+id/disp_pwd"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/disp_height"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/hello_world"
+        android:textSize="@dimen/disp_font" />
+
+    <TableLayout
+        android:id="@+id/key_pad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/disp_pwd"
+        android:layout_marginTop="10dp" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/one_to_one"
+                android:height="@dimen/key_heigth"
+                android:onClick="putKeyOneToOne"
+                android:textSize="@dimen/disp_font"
+                android:width="@dimen/key_width" />
+
+            <Button
+                android:id="@+id/one_to_two"
+                android:height="@dimen/key_heigth"
+                android:onClick="putKeyOneToTwo"
+                android:textSize="@dimen/disp_font"
+                android:width="@dimen/key_width" />
+
+            <Button
+                android:id="@+id/one_to_three"
+                android:height="@dimen/key_heigth"
+                android:onClick="putKeyOneToThree"
+                android:textSize="@dimen/disp_font"
+                android:width="@dimen/key_width" />
+
+            <Button
+                android:id="@+id/one_to_four"
+                android:height="@dimen/key_heigth"
+                android:width="@dimen/key_width" 
+                android:text="@string/bkspace"
+                android:onClick="backSpace"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/tow_to_one"
+                android:height="@dimen/key_heigth"
+                android:onClick="putKeyTwoToOne"
+                android:textSize="@dimen/disp_font"
+                android:width="@dimen/key_width" />
+
+            <Button
+                android:id="@+id/tow_to_two"
+                android:height="@dimen/key_heigth"
+                android:onClick="putKeyTwoToTwo"
+                android:textSize="@dimen/disp_font"
+                android:width="@dimen/key_width" />
+
+            <Button
+                android:id="@+id/tow_to_three"
+                android:height="@dimen/key_heigth"
+                android:onClick="putKeyTwoToThree"
+                android:textSize="@dimen/disp_font"
+                android:width="@dimen/key_width" />
+
+            <Button
+                android:id="@+id/tow_to_four"
+                android:height="@dimen/key_heigth"
+                android:width="@dimen/key_width" 
+                android:text="@string/clear"
+                android:onClick="clear"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/three_to_one"
+                android:height="@dimen/key_heigth"
+                android:onClick="putKeyThreeToOne"
+                android:textSize="@dimen/disp_font"
+                android:width="@dimen/key_width" />
+
+            <Button
+                android:id="@+id/three_to_two"
+                android:height="@dimen/key_heigth"
+                android:onClick="putKeyThreeToTwo"
+                android:textSize="@dimen/disp_font"
+                android:width="@dimen/key_width" />
+
+            <Button
+                android:id="@+id/three_to_three"
+                android:height="@dimen/key_heigth"
+                android:onClick="putKeyThreeToThree"
+                android:textSize="@dimen/disp_font"
+                android:width="@dimen/key_width" />
+
+            <Button
+                android:id="@+id/three_to_four"
+                android:height="@dimen/key_heigth"
+                android:width="@dimen/key_width" 
+                android:text="@string/cancel"
+                android:onClick="cancel"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/four_to_one"
+                android:height="@dimen/key_heigth"
+                android:onClick="putKeyFourToOne"
+                android:textSize="@dimen/disp_font"
+                android:width="@dimen/key_width" />
+
+            <Button
+                android:id="@+id/four_to_two"
+                android:height="@dimen/key_heigth"
+                android:width="@dimen/key_width" />
+
+            <Button
+                android:id="@+id/four_to_three"
+                android:height="@dimen/key_heigth"
+                android:width="@dimen/key_width" 
+                android:text="@string/enter"
+                android:onClick="confirm"/>
+
+            <Button
+                android:id="@+id/four_to_four"
+                android:height="@dimen/key_heigth"
+                android:onClick="reflesh"
+                android:text="@string/reflesh"
+                android:width="@dimen/key_width" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
